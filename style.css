@@ -48,7 +48,7 @@
     font-weight: bolder;
 }
 /* banner section  */
-.banner-container{
+.banner-container,.feature-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
 .banner-container img{
     width:100%
 }
-.banner-container h1{
+.banner-container h1,.feature-container h1{
     color: #3A3A3A;
     font-size: 3.25rem;
     font-weight: 700;
@@ -78,12 +78,23 @@
    
 }
 /* card style  */
-.cards h3{
+.cards>h3{
     color: #3A3A3A;
 font-size: 1.90rem;
 font-weight: 600;
 text-align: center;
 padding: 100px 10px 40px 10px;
+
+}
+.para{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: end;
+    width:85%;
+ 
+
+
 }
 .card h3{
     color: #3A3A3A;
@@ -124,22 +135,46 @@ padding: 20px;
     padding-bottom: 40px;
 }
 
+.feature{
+    margin-left:9rem;
+}
+.footer{
+    background-color:#0A0826;
+    width: 100%;
+    padding:100px 0;
+}
+.footer h3{
+    color: #FFF;
+font-size: 1.8rem;
+font-weight: 700;
+text-align: center;
+}
+.footer p{
+    color: #D9DBE1;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+
+   
+ 
+}
+
 
 
 
 
 @media screen and (max-width:576px){
-    .nav-container{
+    .nav-container,.feature-container{
         flex-direction: column;
         row-gap: 40px;
     }
-    .banner-container{
+    .banner-container,.feature-container{
         flex-direction: column-reverse;
     }
     .banner-container img{
         width: 350px;
     }
-    .banner-container h1,.banner-container p,.banner-container .primary-bttn{
+    .banner-container h1,.primary-p,.primary-bttn{
         text-align: center;
         width: 100%;
     }
@@ -162,7 +197,7 @@ padding: 20px;
         flex-wrap:wrap;  
         margin: 20px 30px;
         gap: 0px;
-        padding: 0
+        padding: 0;
 
         
     }
@@ -183,11 +218,24 @@ padding: 20px;
         width: 90%;
         padding: 10px;
       }
+    .feature-container img{
+        margin: 10px;
+        width: 300px;
+    }
+    .feature-container h1, .feature-container,.feature{
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 990px) {
 
-    .nav-container{
+    .nav-container,.feature-container{
         flex-direction: column;
+    }
+    .feature-container{
+        flex-direction: column-reverse;
     }
     .nav-container ul{
        margin-top:50px; 
@@ -206,7 +254,7 @@ padding: 20px;
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr);
         margin: 80px 20px;}
         .card{
           margin: auto;
@@ -216,5 +264,10 @@ padding: 20px;
           margin: 0;
           width: 90%;
           padding: 10px;
+        }
+        .feature-container h1,.feature-container p, .feature-container,.feature{
+            margin: auto;
+            padding:20px;
+            text-align: center;
         }
 }
