@@ -31,7 +31,6 @@
 }
 .nav-container ul{
     display: flex;
-  
    align-items: center;
    justify-content: space-evenly;
    
@@ -63,7 +62,21 @@
     font-size: 3.25rem;
     font-weight: 700;
 }
-
+/* sponser style  */
+.sponsper-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 200px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    
+}
+.sponsper-container img{
+    max-width: 100px;
+   padding: 50px;
+   
+}
 
 
 
@@ -96,5 +109,31 @@
     .banner-container h1 p{
         margin: auto;
         text-align: center;
+    }
+    .sponsper-container{
+        
+        flex-wrap:wrap;  
+        margin: 20px 30px;
+        gap: 0px;
+        padding: 0;
+        
+    }
+    .sponsper-container img{
+        padding: 10px;
+        width: 70px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sponsper-container{
+        
+        flex-wrap:wrap;  
+        margin: 20px 150px;
+        gap: 0px;
+        padding: 0;
+        
+    }
+    .sponsper-container img{
+        padding: 10px;
+        width: 70px;
     }
 }
