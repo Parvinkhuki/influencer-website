@@ -77,6 +77,53 @@
    padding: 50px;
    
 }
+/* card style  */
+.cards h3{
+    color: #3A3A3A;
+font-size: 1.90rem;
+font-weight: 600;
+text-align: center;
+padding: 100px 10px 40px 10px;
+}
+.card h3{
+    color: #3A3A3A;
+font-size: 1.90rem;
+font-weight: 600;
+text-align: center;
+padding: 20px;
+}
+.card{
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 80px;
+   row-gap: 20px;
+   text-align: center;
+   margin: 80px 190px;
+}
+.card img{
+   margin: 20px;
+}
+.card h4{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.card p{
+    color: #787885;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
 
 
 
@@ -115,15 +162,36 @@
         flex-wrap:wrap;  
         margin: 20px 30px;
         gap: 0px;
-        padding: 0;
+        padding: 0
+
         
     }
     .sponsper-container img{
         padding: 10px;
         width: 70px;
     }
+    .card-container{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(12,1fr);
+      margin: 80px 20px;}
+      .card{
+        margin: auto;
+        width: 300px;
+      }
+      .card img{
+        margin: 0;
+        width: 90%;
+        padding: 10px;
+      }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-container ul{
+       margin-top:50px; 
+    }
     .sponsper-container{
         
         flex-wrap:wrap;  
@@ -136,4 +204,17 @@
         padding: 10px;
         width: 70px;
     }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12,1fr);
+        margin: 80px 20px;}
+        .card{
+          margin: auto;
+          width: 300px;
+        }
+        .card img{
+          margin: 0;
+          width: 90%;
+          padding: 10px;
+        }
 }
