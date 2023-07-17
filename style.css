@@ -118,6 +118,7 @@ padding: 20px;
    row-gap: 20px;
    text-align: center;
    margin: 80px 190px;
+   overflow:hidden;
 }
 .card img{
    margin: 20px;
@@ -153,10 +154,28 @@ text-align: center;
     color: #D9DBE1;
     font-size: 1rem;
     font-weight: 700;
-    text-align: center;
-
+    text-align: center; 
+}
+.sponsper-container img,.nav-container li,.card-container img,.para:hover {
+    transition:transform 2s;
+  
+    overflow:hidden;
+}
+.sponsper-container img:hover,.nav-container li:hover,.card-container img:hover,.para:hover{
+    transform: scale(1.2);
    
- 
+}
+
+.nav-container li:hover{
+    color: #E02C6D;
+}
+.primary-bttn:hover{
+    background-color: #0A0826;
+    color:#E02C6D;
+   
+}
+.para:hover{
+    color: #0A0826;
 }
 
 
