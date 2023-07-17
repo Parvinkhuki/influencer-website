@@ -156,12 +156,12 @@ text-align: center;
     font-weight: 700;
     text-align: center; 
 }
-.sponsper-container img,.nav-container li,.card-container img,.para:hover {
+.sponsper-container img,.nav-container li,.card-container,.para:hover {
     transition:transform 2s;
   
     overflow:hidden;
 }
-.sponsper-container img:hover,.nav-container li:hover,.card-container img:hover,.para:hover{
+.sponsper-container img:hover,.nav-container li:hover,.card-container:hover,.para:hover{
     transform: scale(1.2);
    
 }
